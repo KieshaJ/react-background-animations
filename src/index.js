@@ -1,5 +1,3 @@
 import ParticleAnimation from "./components/ParticleAnimation";
 
-module.exports = {
-    ParticleAnimation
-};
+exports.ParticleAnimation = ParticleAnimation;
