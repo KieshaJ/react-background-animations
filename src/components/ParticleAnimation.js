@@ -9,6 +9,7 @@ const ParticleAnimation = (props) => {
     const circle = 2 * Math.PI;
 
     const {
+        classes,
         sensitivity,
         siblings,
         nodeMargin,
@@ -201,13 +202,14 @@ const ParticleAnimation = (props) => {
     });
 
     return (
-        <div>
+        <div className={classes}>
             <canvas ref={canvasRef} />
         </div>
     );
 };
 
 ParticleAnimation.propTypes = {
+    classes: PropTypes.string,
     sensitivity: PropTypes.number,
     siblings: PropTypes.number,
     nodeMargin: PropTypes.number,
@@ -219,6 +221,7 @@ ParticleAnimation.propTypes = {
 };
 
 ParticleAnimation.defaultProps = {
+    classes: '',
     sensitivity: 100,
     siblings: 10,
     nodeMargin: 50,
@@ -227,6 +230,6 @@ ParticleAnimation.defaultProps = {
     r: 0,
     g: 0,
     b: 0
-}
+};
 
 export default ParticleAnimation;

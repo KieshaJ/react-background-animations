@@ -1,3 +1,5 @@
-import ParticleAnimation from "./components/ParticleAnimation";
+const ParticleAnimation = require('./components/ParticleAnimation').default;
 
-exports.ParticleAnimation = ParticleAnimation;
+export {
+    ParticleAnimation
+};
