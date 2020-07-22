@@ -182,7 +182,7 @@ const ParticleAnimation = (props) => {
         }
 
         function initHandlers() {
-            document.addEventListener('resize', resizeWindow, false);
+            window.addEventListener('resize', resizeWindow, false);
             document.addEventListener('mousemove', mousemoveHandler, false);
         }
 
